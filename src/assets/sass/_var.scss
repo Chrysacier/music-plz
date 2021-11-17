@@ -1,0 +1,41 @@
+
+:root{
+    --color-background : #1C1024;
+    --color-text : #262626;
+    --color-text-offset: #fff;
+}
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: "Brasley";
+    src: url(../fonts/Brasley-Bold.woff) format("woff"),
+    url(../fonts/Brasley-Bold.woff2) format("woff2");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Telegraf";
+    src: url(../fonts/Telegraf-Bold.woff) format("woff"),
+    url(../fonts/Telegraf-Bold.woff2) format("woff2");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Telegraf";
+    src: url(../fonts/Telegraf-Regular.woff) format("woff"),
+    url(../fonts/Telegraf-Regular.woff) format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Monument-Extended";
+    src: url(../fonts/MonumentExtended-Bold.woff) format("woff"),
+    url(../fonts/MonumentExtended-Bold) format("woff2");
+    font-weight: 700;
+}

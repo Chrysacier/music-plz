@@ -1,9 +1,9 @@
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-  background-color: lime;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+@use "_type.scss";
+@use "_normalize.css";
+@use "_var.scss";
+@use "_layout.scss";
+@use "_grid.scss";
+@use "_header.scss";
+@use "_slider.scss";
+@use "_animation.scss";
+@use "_footer.scss";

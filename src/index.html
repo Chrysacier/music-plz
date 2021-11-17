@@ -1,10 +1,77 @@
-<html>
+
+<!DOCTYPE html>
+<html lang="fr">
 	<head>
-		<title>Gulp Starter Pack</title>
-		<link href="/assets/css/main.css" rel="stylesheet" >
+		<meta charset="UTF-8">
+		<title>🎧 Music PLZ — JUNE.</title>
+		<meta name="description" content="Site informatif à propos du groupe pop june. A propos, leur label, les membres.">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://chrysanthe.dev/">
+		<meta property="og:title" content="🎧 Music PLZ — JUNE.">
+		<meta property="og:description" content="Site informatif à propos du groupe pop june. A propos, leur label, les membres.">
+		<meta property="og:image" content="https://chrysanthe.dev/projets/musicplz/assets/images/meta.png">
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://chrysanthe.dev/projets/musicplz">
+		<meta property="twitter:title" content="🎧 Music PLZ — JUNE.">
+		<meta property="twitter:description" content="Site informatif à propos du groupe pop june. A propos, leur label, les membres.">
+		<meta property="twitter:image" content="https://chrysanthe.dev/projets/musicplz/assets/images/meta.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/svg" href="assets/images/favico.svg">     
+		<link href="assets/css/main.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.typekit.net/oye3isl.css">
+	    <script src="assets/js/main.min.js" defer></script>
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
 	</head>
 	<body>
-		<h1>Gulp Starter Pack</h1>
-		<script src="/assets/js/main.min.js" ></script>
+		<div class="container">
+			<div class="transi">
+				.
+			</div>
+			<!-- <div class="intro">
+				<h1 class="title">june</h1>
+			</div>
+			-->
+			<header class="header">
+				<button class="btn btn--nav">
+					<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="25" cy="25" r="24.5" fill="white" stroke="#F0F0F0"/>
+						<rect class="bg" x="12" y="21" width="25" height="2" fill="#262626"/>
+						<rect class="bg2"  x="12" y="27" width="25" height="2" fill="#262626"/>
+						</svg>
+						
+				</button>
+				<nav class="nav">
+					<ul class="list nav__list">
+						<li class="nav__item"><a href="index.html" class="link nav__link">About</a></li>
+						<li class="nav__item"><a href="label.html#scroll" class="link nav__link">Label</a></li>
+						<li class="nav__item"><a href="artiste.html" class="link nav__link">The band</a></li>
+					</ul>
+				</nav>
+				<div class="main-block">
+					<h2 class="title title--regular slide-in">june</h2>
+					<img src="assets/images/band.png" srcset="assets/images/band@2x.png 2x" alt="" class="img img--band slide-in-large">
+				</div>
+			</header>
+			<main class="main">
+				<div class="slide-over">
+					<div class="album">
+						<svg width="143" height="143" viewBox="0 0 143 143" fill="none" xmlns="http://www.w3.org/2000/svg" class="player__play">
+							<path d="M66 79V63L79 71L66 79Z" fill="white"/>
+							<circle cx="71.5" cy="71.5" r="70" stroke="white" class="outline"/>
+						</svg>
+						<svg width="18" height="24" xmlns="http://www.w3.org/2000/svg" class="player__pause"><path d="M0 0h5v24H0zM13 0h5v24h-5z" fill="#fff"/></svg>
+						<img src="assets/images/pochette.png" srcset="assets/images/pochette@2x.png 2x" alt="" class="img img--cover">
+					</div>
+					<strong class="strong">découvrez le nouveau single de june.</strong>
+					<audio controls src="assets/js/june.mp3" class="audio-player">Your browser does not support the</audio>
+				</div>
+			</main>
+			<footer class="footer footer--home">
+				<small><a href="https://chrysanthe.dev/"" class="link footer__link">Chrysanthe</a> © 2020-21 - <a href="http://dwm.re" class="link footer__link">DWT</a>.</small>	  
+			</footer>
+		</div>
 	</body>
 </html>

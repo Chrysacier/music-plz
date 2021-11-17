@@ -1,0 +1,34 @@
+
+  .footer{
+    background-color: var(--color-background);
+    padding: 5rem 0;
+    color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    position: absolute;
+    z-index: 7;
+    width: 100%;
+    
+
+    @media (min-width: 600px){
+      flex-direction: row;
+      align-items: baseline;
+    }
+
+    &__link{
+      color: var(--color-offset);
+      border-bottom: 1px solid var(--color-text-offset);
+    }
+
+    &--home{
+      top: 100vh;
+      margin-top: 100vh;
+    }
+
+
+  }
+  
+  

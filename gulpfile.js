@@ -10,8 +10,6 @@ const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const eslint = require('gulp-eslint');
 
-const imagemin = require("gulp-imagemin");
-
 const browserSyncServer = require("browser-sync").create();
 
 const styles = () => {
@@ -46,12 +44,6 @@ const html = () => {
 const watchFiles = () => {
 	gulp.watch("./src/assets/sass/**/*.scss", styles);
 	gulp.watch("./src/assets/js/**/*.js", javascript);
-	gulp.watch([
-		"./src/assets/images/**/*.jpg",
-		"./src/assets/images/**/*.png",
-		"./src/assets/images/**/*.gif",
-		"./src/assets/images/**/*.svg"
-	], compressImages);
 	gulp.watch("./src/*.html", gulp.series(html, browserReload));
 }
 
@@ -70,24 +62,10 @@ const browserReload = (done) => {
 	done();
 }
 
-const compressImages = () => {
-	return gulp.src([
-		"./src/assets/images/**/*.jpg",
-		"./src/assets/images/**/*.png",
-		"./src/assets/images/**/*.gif",
-		"./src/assets/images/**/*.svg"
-	  ])
-	 .pipe(imagemin({
-		 progressive: true,
-		 svgoPlugins: [{removeViewBox: false}]
-	 }))
-	 .pipe(gulp.dest('./dist/assets/images/'))
-}
 
-const build = gulp.series(html, styles, javascript, compressImages);
+
+const build = gulp.series(html, styles, javascript);
 const watch = gulp.series(build, gulp.parallel(watchFiles, browserSync));
-const compress = gulp.series(compressImages);
 
 exports.watch = watch;
-exports.compress = compress;
 exports.default = build;
